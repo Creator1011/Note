@@ -21,7 +21,7 @@ public class Main {
         jb.setBounds(60,430,120,30);
         Date date=new Date();
         jb.addActionListener(e -> {
-            File file=new File("D:\\"+date.getTime()+".txt");
+            File file=new File("D:\\"+new Date.getTime()+".txt");
             try{
                 FileWriter fw=new FileWriter(file);
                 fw.write(jta.getText());
